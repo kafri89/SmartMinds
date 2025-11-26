@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Use - SmartMinds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-top: 1.5em;
+        }
+
+        a {
+            color: #3498db;
+        }
+
+        .home-icon {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            background: none;
+            font-size: 1.5rem;
+            z-index: 100;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div data-game-url="index.html" class="home-icon" title="Return to Home">🏠</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions, complains or suggestions, please contact us by email.</p>
+    <a href="mailto:smartminds.2025@outlook.com">smartminds.2025@outlook.com</a></li>
+
+    <script>
+        const homeIcon = document.querySelector('[data-game-url]');
+        homeIcon.addEventListener('click', function () {
+            window.location.href = this.getAttribute('data-game-url');
+        });
+    </script>
+</body>
+
+</html>
